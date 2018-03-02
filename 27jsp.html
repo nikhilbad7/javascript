@@ -1,0 +1,26 @@
+<input type="text" id="t1">
+<input type="button" value="check" onclick="show()">
+
+<script>
+function show(){
+var x=document.getElementById("t1").value;
+if(x.length<7){
+alert("please enter  a minimum of 7 digit text");}
+else{
+var u=0,l=0,d=0,s=0;
+for(j=0;j<x.length;j++){
+if(x.charCodeAt(j)>=65&&x.charCodeAt(j)<=90){
+u++;}
+else if(x.charCodeAt(j)>=97&&x.charCodeAt(j)<=122){
+l++;}
+else if(x.charCodeAt(j)>=48&&x.charCodeAt(j)<=57){
+d++;}
+else{s++;}
+}
+if(u>=1&&l>=1&&d>=1&&s>=1){
+alert("password is valid");}
+else{
+ alert("password is invalid");}
+}
+}
+</script>
