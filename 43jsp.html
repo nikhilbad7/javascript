@@ -1,0 +1,10 @@
+<p id="x"></p>
+<script>
+var i=30;
+var h=setInterval(function(){
+document.getElementById("x").innerHTML=("Time Left:"+i);
+i--;
+if(i==20){
+clearInterval(h);}
+},1000);
+</script>
