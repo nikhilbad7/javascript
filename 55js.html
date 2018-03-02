@@ -1,0 +1,49 @@
+<html>
+<body>
+<style>
+#main{
+background-color:black;
+height:1000px;
+width:100%;
+}
+#x{
+height:100px;
+width:100px;
+border-radius:360px;
+position:absolute;
+top:100px;
+left:600px;
+background-color:red;}
+#y{
+position:absolute;
+background-color:green;
+top:200px;
+left:560px;
+height:300px;
+width:200px;}
+#z{
+position:absolute;
+top:530px;
+left:600px;
+}
+#t{
+height:30px;
+width:70px;}
+</style>
+<div id="main">
+<div id="x"></div>
+<div id="y"></div>
+<div id="z"><input type="button" id="t" value="click" onclick="show()"></div>
+</div>
+</body>
+<script>
+var count=0;
+function show(){
+count++;
+if(count%2!=0){document.getElementById("x").style.visibility="hidden";
+document.getElementById("y").style.visibility="hidden";}
+else{
+document.getElementById("x").style.visibility="visible";
+document.getElementById("y").style.visibility="visible";}
+}</script>
+</html>
