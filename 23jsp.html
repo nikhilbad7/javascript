@@ -1,0 +1,21 @@
+<input type="text" id="t1">
+<br><br>
+<input type="text" id="t2">
+<br><br>
+<input type="button" value="ok" onclick="show()">
+<script type="text/javascript">
+function show(){
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+if(isNaN(x)||isNaN(y)){
+alert("enter A NUMeric value");}
+else if(x.length!=10)
+{
+alert("please enter a 10 digit number");}
+else if(y<12||y>90){
+alert("please enter age between 12 and 90");}
+else {
+alert(x+"  "+y);
+}
+}
+</script> 
