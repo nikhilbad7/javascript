@@ -1,0 +1,13 @@
+<p id="x"></p>
+<script>
+var i=1;
+var y="<table>";
+var h=setInterval(function(){
+y=y+"<tr><td><input type=text></td></tr><br><br>";
+document.getElementById("x").innerHTML=y;
+i++;
+if(i==21){
+clearInterval(h);}
+},1000);
+y=y+"</table>";
+</script>
