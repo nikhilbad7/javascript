@@ -1,0 +1,16 @@
+<input type="text" id="t1">
+<input type="text" id="t2">
+<input type="button" value="ok" onclick="show()">
+<p id="z"></p>
+<script>
+function show(){
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+var v="<table border=1>";
+for(i=1;i<=y;i++){
+var w=x*i;
+v=v+"<tr><td>"+x+"</td><td>*</td><td>"+i+"</td><td>=</td><td>"+w+"</td></tr>";
+}
+v=v+"</table>";
+document.getElementById("z").innerHTML=v;}
+</script>
