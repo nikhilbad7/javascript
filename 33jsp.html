@@ -1,0 +1,18 @@
+<input type="text" id="t1">
+<input type="button" value="ok" onclick="show()">
+<script>
+function show(){
+var x=document.getElementById("t1").value;
+var y=x.split(" "),x="";
+for(i=0;i<y.length;i++){
+var z=y[i].length;
+for(j=z;j>=0;j--){
+x=x+y[i].charAt(j);
+//document.write(y[i].charAt(j));}
+//document.write(" ");
+}
+x=x+" ";
+}
+document.write(x);
+}
+</script>
