@@ -1,0 +1,25 @@
+<style>
+#x{
+width:30%;
+background-color:red;}
+</style>
+<div id="x"></div>
+<script>
+var f=1;
+var i=50;		
+var h=setInterval(function(){
+if(i<200&&f==1){
+document.getElementById("x").style.height=i+"px";
+if(i>=190){
+f=0;
+}
+i=i+10;
+}
+else if(f==0){
+document.getElementById("x").style.height=i+"px";
+if(i==50){f=1;}
+i=i-10;
+}
+},100);
+
+</script>
