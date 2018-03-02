@@ -1,0 +1,12 @@
+DATE:<input type="text" id="t1">
+<input type="button" value="check" onclick="show()">
+<script>
+function show(){
+var d=document.getElementById("t1").value;
+var rd=/^(0?[1-9]|1[012])[\/](0?[1-9]|[12][0-9]|3[01])[\/]\d{4}$/;
+if(rd.test(d)){
+alert("valid date");}
+else{
+alert("invalid date");}
+}
+</script>
