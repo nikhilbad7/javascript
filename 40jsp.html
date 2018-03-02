@@ -1,0 +1,19 @@
+<input type="text" id="t1">
+<select onchange="show()" id="y">
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+<option value=4>4</option>
+<option value=5>5</option>
+</select>
+<p id="w"></p>
+<script>
+function show(){
+var x=parseInt(document.getElementById("y").value);
+var z="<table border=1>";
+for(i=1;i<=x;i++){
+z=z+"<tr><td>"+i+"</td></tr>";}
+z=z+"</table>";
+document.getElementById("w").innerHTML=z;
+}
+</script>
