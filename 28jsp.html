@@ -1,0 +1,14 @@
+<input type="text" id="t1">
+<input type="button" value="sum" onclick="show()">
+<script>
+function show(){
+var x=document.getElementById("t1").value;
+var g=x.split(":");
+alert(g.length);
+var s=0;
+for(i=0;i<g.length;i++){
+s=s+parseInt(g[i]);
+}
+alert("the sum is"+s);
+}
+</script>
