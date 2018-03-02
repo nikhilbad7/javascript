@@ -1,0 +1,72 @@
+RNO<input type="text" id="t1"><br><br>
+NAME<input type="text" id="t2"><br><br>
+EMAIL<input type="text" id="t3"><br><br>
+CITY<input type="text" id="t4"><br><br>
+PINCODE<input type="text" id="t5"><br><br>
+MOBNO<input type="text" id="t6"><br><br>
+<input type="button" value="check" onclick="show()">
+<script>
+var ra=/^[a-zA-Z ]*$/;
+var re=/\S+@\S+\.\S+/;
+var i,c=0;
+function show(){
+var r=document.getElementById("t1").value;
+var n=document.getElementById("t2").value;
+var e=document.getElementById("t3").value;
+var c=document.getElementById("t4").value;
+var p=document.getElementById("t5").value;
+var m=document.getElementById("t6").value;
+if(isNaN(r)){
+alert("please enter some numeric value");}
+else{
+if(r.length!=10){
+alert("please enter 10 digit number");}
+else{
+alert("rollno is"+r);}
+}
+if(ra.test(n)){
+for(i=0;i<n.length;i++){
+if((n.charCodeAt(i)>=32&&n.charCodeAt(i)<=47)||(n.charCodeAt(i)>=58&&n.charCodeAt(i)<=64)){
+c++;}
+else{
+}}
+if(c==2){
+alert("Name is"+n);}
+else{
+alert("more than 2 characters")}
+}
+else{
+alert("please enter alphabetic name");}
+if(re.test(e)){
+if(e.length!=0){
+alert("valid email")}
+else{
+alert("fill this field");}
+}
+else{
+alert("invalid email");}
+if(ra.test(c)){
+alert("valid city");}
+else{
+alert("invalid city");}
+if(!isNaN(p)){
+if(p.length==6){
+alert("pincode is"+p);}
+else{
+alert("enter 6 digit pincode");
+}
+}
+else{
+alert("please enter numeric code");
+}
+if(!isNaN(m)){
+if(m.length==10){
+alert("mobno. is"+m);}
+else{
+alert("please enter 10 digit number");}
+}
+else{
+alert("please enter numeric value");
+}
+}
+</script>
