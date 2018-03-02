@@ -1,0 +1,16 @@
+<input  type="text" id="t1">
+<input type="button" value="ok" onclick="show()">
+<script type="text/javascript">
+function show(){
+var x=document.getElementById("t1").value;
+if(isNaN(x)){
+alert("enter a numeric value");
+}
+else if(x<12||x>90){
+alert("enter value between 12 and 90");}
+else{
+alert(x);
+}
+
+}
+</script>
