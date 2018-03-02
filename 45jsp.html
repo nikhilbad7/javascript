@@ -1,0 +1,20 @@
+<input type="text" id="t1">
+<input type="text" id="t2">
+<input type="button" value="ok" onclick="show()">
+<p id="x"></p>
+<script>
+function show(){
+var i=1;
+var t="";
+var h=setInterval(function(){
+var y=parseInt(document.getElementById("t1").value);
+var z=parseInt(document.getElementById("t2").value);
+w=y*i;
+t=t+y+"*"+i+"="+w+"<br>";
+document.getElementById("x").innerHTML=t;
+i++;
+if(i==(z+1)){
+clearInterval(h);}
+},1000);
+}
+</script>
