@@ -1,0 +1,67 @@
+NAME:<input type="text" id="t1"><br><br>
+BRANCH:<select id="t2">
+<option value=cse>cse</option>
+<option value=it>it</option>
+<option value=civil>civil</option>
+<option value=mech>mech</option>
+<option value=EEE>EEE</option>
+</select><br><br>
+SEM:<select id="t3">
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+<option value=4>4</option>
+<option value=5>5</option>
+<option value=6>6</option>
+<option value=7>7</option>
+<option value=8>8</option>
+</select><br><br>
+Rollno:<input type="text" id="t4"><br><br>
+DOB:<select id="t5" value="date">
+<option value=1>1</option>
+<option value=2>2</option>
+<option value=3>3</option>
+<option value=4>4</option>
+</select>
+<select id="t6" value="month">
+<option value="jan">"JANUARY"</option>
+<option value="feb">"FEBUARY"</option>
+<option value="may">"MAY"</option>
+</select>
+<select id="t7" value="year">
+<option value=2000>2000</option>
+<option value=2001>2001</option>
+<option value=2002>2002</option>
+</select><br><br>
+<input type="button" onclick="show()" value="check">
+<script>
+function show(){
+var i,a="",x="",j,u,s="";
+var n=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+var s=document.getElementById("t3").value;
+var r=document.getElementById("t4").value;
+var d=document.getElementById("t5").value;
+var m=document.getElementById("t6").value;
+var y=document.getElementById("t7").value;
+alert(b);
+for(i=0;i<n.length;i++){
+while(i<3){
+a=a+n.charAt(i);
+i++;
+}
+}
+a=a+b;
+if(r.length==10){
+for(u=9;u>7;u--){
+s=s+r.charAt(u);
+}
+a=a+s;}
+else{
+alert("enter 10 digit number");}
+for(j=y.length-1;j>y.length-3;j--){
+x=x+y.charAt(j);}
+a=a+x;
+alert(a);
+}
+</script>
