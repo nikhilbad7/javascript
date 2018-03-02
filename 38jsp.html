@@ -1,0 +1,14 @@
+no of students:<input type="text" id="t1">
+<input type="button" value="ok" onclick="show()">
+<p id="z"></p>
+<script>
+function show(){
+var x=parseInt(document.getElementById("t1").value);
+var y="<table>";
+y=y+"<tr><td>Rno</td><td>Name</td><td>Marks</td></tr>";
+for(i=0;i<x;i++){
+y=y+"<tr><td><input type=text></td><td><input type=text></td><td><input type=text></td></tr>";}
+y=y+"</table>";
+document.getElementById("z").innerHTML=y;
+}
+</script>
