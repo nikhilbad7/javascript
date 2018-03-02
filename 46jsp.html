@@ -1,0 +1,17 @@
+<p id="x"></p>
+<script>
+var i=29;
+var j=59;
+var h=setInterval(function(){
+document.getElementById("x").innerHTML=("Time Left:"+i+":"+j);
+j--;
+if(i==0&&j==-1){
+clearInterval(h);
+window.location="Ajsp.html";
+}
+
+if(j==-1){
+i--;
+j=59;}
+},1000);
+</script>
