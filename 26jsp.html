@@ -1,0 +1,19 @@
+<input type="text" id="t1">
+<input type="button" value="ok" onclick="show()">
+<script type="text/javascript">
+function show(){
+var l=0,u=0,d=0,s=0;
+var x=document.getElementById("t1").value;
+for(j=0;j<x.length;j++){
+if(x.charCodeAt(j)>=65&&x.charCodeAt(j)<=90){
+u++;}
+else if(x.charCodeAt(j)>=97&&x.charCodeAt(j)<=122){
+l++;}
+else if(x.charCodeAt(j)>=48&&x.charCodeAt(j)<=57){
+d++;}
+else{
+s++;}
+}
+alert(u+" "+l+" "+d+" "+s);
+}
+</script>
