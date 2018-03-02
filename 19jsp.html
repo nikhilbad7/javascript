@@ -1,0 +1,38 @@
+<input type="text" id="t1" >
+<input type="text" id="t2">
+<input type="button" value="+" onclick="show1()">
+<input type="button" value="-" onclick="show2()">
+<input type="button" value="*" onclick="show3()">
+<input type="button" value="clear" onclick="show4()">
+<script type="text/javascript">
+function show1(){
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+if(isNaN(x)||isNaN(y)){
+alert("enter numeric value");}
+else{
+z=parseInt(x)+parseInt(y);
+}
+alert(z);
+}
+function show2(){
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+if(isNaN(x)||isNaN(y)){
+alert("enter numeric value");}
+else{
+z=parseInt(x)-parseInt(y);
+alert(z);
+}
+}
+function show3(){
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+z=parseInt(x)*parseInt(y);
+alert(z);
+}
+function show4(){
+document.getElementById("t1").value="";
+document.getElementById("t2").value="";
+}
+</script>
