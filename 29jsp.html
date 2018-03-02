@@ -1,0 +1,13 @@
+<input type="text" id="t1">
+<input type="button" value="ok" onclick="show()">
+<script>
+function show(){
+var x=document.getElementById("t1").value;
+var y=x.split("@");
+for(i=0;i<1;i++){
+var z=y[i].split(","); 
+document.write("Rollno"+z[0]);
+document.write("Marks"+z[1]);
+document.write("BRanch"+z[2]);
+}}
+</script>
