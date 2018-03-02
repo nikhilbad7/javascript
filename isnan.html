@@ -1,0 +1,20 @@
+Name:<input type="text" id="t1">
+Age:<input type="text" id="t2">
+<input type="button" value="check" onclick="show()">
+<script>
+function show(){
+var x=document.getElementById("t1").value;
+var y=document.getElementById("t2").value;
+if(isNaN(x)){
+alert(x);}
+else if(!isNaN(x)){
+alert("you entered a numeric value");}
+if(isNaN(y)){
+alert("please enter a numeric value");}
+else if(!isNaN(y)){
+if(y>=12&&y<=90){
+alert(y);}
+else{
+alert("enter age between 12 and 90");}
+}}
+</script>
