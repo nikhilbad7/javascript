@@ -1,0 +1,19 @@
+NAME:<input type="text" id="t1">
+EMAIL:<input type="text" id="t2">
+<input type="button" value="check" onclick="show()">
+<script>
+var re=/\S+@\S+\.\S+/
+var ra=/^[a-zA-Z ]*$/
+function show(){
+n=document.getElementById("t1").value;
+e=document.getElementById("t2").value;
+if(ra.test(n)){
+alert("valid name");}
+else{
+alert("please enter alphabets only");}
+if(re.test(e)){
+alert("valid email");}
+else{
+alert("invalid email format");}
+}
+</script>
