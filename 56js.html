@@ -1,0 +1,112 @@
+<html>
+<body>
+<style>
+#main{
+background-color:black;
+height:600px;
+width:100%;}
+#b1{
+position:absolute;
+top:100px;
+left:200px;}
+#b2{
+position:absolute;
+top:100px;
+left:300px;}
+#b3{
+position:absolute;
+top:100px;
+left:400px;}
+#b4{
+position:absolute;
+top:200px;
+left:200px;}
+#b5{
+position:absolute;
+top:200px;
+left:300px;}
+#b6{
+position:absolute;
+top:200px;
+left:400px;}
+#b7{
+position:absolute;
+top:300px;
+left:200px;}
+#b8{
+position:absolute;
+top:300px;
+left:300px;}
+#b9{
+position:absolute;
+top:300px;
+left:400px;}
+#b11{
+height:30px;
+width:30px;}
+#b22{
+height:30px;
+width:30px;}
+#b33{
+height:30px;
+width:30px;}
+#b44{
+height:30px;
+width:30px;}
+#b55{
+height:30px;
+width:30px;}
+#b66{
+height:30px;
+width:30px;}
+#b77{
+height:30px;
+width:30px;}
+#b88{
+height:30px;
+width:30px;}
+#b99{
+height:30px;
+width:30px;}
+</style>
+<div id="main">
+<div id="b1"><input id="b11" type="button" onclick="show(this,0)"></div>
+<div id="b2"><input type="button" id="b22" onclick="show(this,1)"></div>
+<div id="b3"><input id="b33" type="button" onclick="show(this,2)"></div>
+<div id="b4" ><input id="b44" type="button" onclick="show(this,3)"></div>
+<div id="b5" ><input id="b55" type="button" onclick="show(this,4)"></div>
+<div id="b6"><input id="b66" type="button" onclick="show(this,5)"></div>
+<div id="b7"><input id="b77" type="button" onclick="show(this,6)"></div>
+<div id="b8"><input id="b88" type="button" onclick="show(this,7)"></div>
+<div id="b9"><input id="b99" type="button" onclick="show(this,8)"></div>
+</div>
+</body>
+</html>
+<script>
+var m=1,c=0;
+var a=[2,3,4,5,6,7,8,9,10];
+function show(N,P){
+if(m%2==1){
+alert("player 1 turn");
+N.value="x";
+a[P]=1;
+m++;}
+else
+{
+alert("player 2 turn");
+N.value="o"
+a[P]=0;
+m++;} 
+if((a[0]==a[1]&&a[0]==a[2])||(a[3]==a[4]&&a[3]==a[5])||(a[6]==a[7]&&a[6]==a[8])||(a[0]==a[3]&&a[0]==a[6])||(a[1]==a[4]&&a[1]==a[7])||(a[2]==a[5]&&a[2]==a[8])||(a[0]==a[4]&&a[0]==a[8])||(a[2]==a[4]&&a[2]==a[6])){
+if(m%2==1){
+alert("player 2 won");
+}
+else if(m%2==0){
+alert("player 1 won");}
+}
+else if(c==8){
+alert("match is drawn");
+alert("restart the game");
+window.location="56js.html";}
+c++;}
+</script>
