@@ -1,0 +1,12 @@
+<input type="text" id="t1">
+<input type="text" id="t2">
+<input type="button" value="ok" onclick="show()">
+<p id="z"></p>
+<script>
+function show(){
+var x=parseInt(document.getElementById("t1").value);
+var y=parseInt(document.getElementById("t2").value);
+var sum=x+y;
+document.getElementById("z").innerHTML=x+"+"+y+"="+sum;
+}
+</script>
