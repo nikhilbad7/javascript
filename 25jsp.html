@@ -1,0 +1,14 @@
+<input type="text" id="t1">
+<input type="button" value="calculate" onclick="show()">
+<script type="text/javascript">
+function show(){
+var x=document.getElementById("t1").value;
+var v=0;
+for(j=0;j<x.length;j++){
+if(x.charAt(j)=='a'||x.charAt(j)=='i'||x.charAt(j)=='e'||x.charAt(j)=='o'||x.charAt(j)=='u'||x.charAt(j)=='A'||x.charAt(j)=='E'||x.charAt(j)=='I'||x.charAt(j)=='O'||x.charAt(j)=='U'){
+v++;}}
+alert(v);
+}
+</script>
+
+
