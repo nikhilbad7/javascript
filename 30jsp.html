@@ -1,0 +1,39 @@
+<input type="text" id="t1">
+<input type="button" value="ok" onclick="show()">
+<script>
+function show(){
+var x=document.getElementById("t1").value;
+var z="101,20,80,raj,cse@102,30,70,sagar,it@103,40,85,rohit,mech@104,40,86,sunil,civil@105,50,90,rahul,electrical";
+var y=z.split("@");
+if(x=='cse'){
+var w=y[0].split(",");
+document.write("Rollno:"+w[0]+"<br>");
+document.write("Marks:"+w[1]+"<br>");
+document.write("attendence:"+w[2]+"<br>");
+document.write("name:"+w[3]);}
+else if(x=='it'){
+var w=y[1].split(",");
+document.write("Rollno:"+w[0]);
+document.write("Marks:"+w[1]);
+document.write("attendence:"+w[2]);
+document.write("name:"+w[3]);}
+else if(x=='mech'){
+var w=y[2].split(",");
+document.write("Rollno:"+w[0]);
+document.write("Marks:"+w[1]);
+document.write("attendence:"+w[2]);
+document.write("name:"+w[3]);}
+else if(x=='civil'){
+var w=y[3].split(",");
+document.write("Rollno:"+w[0]);
+document.write("Marks:"+w[1]);
+document.write("attendence:"+w[2]);
+document.write("name:"+w[3]);}
+else if(x=='electrical'){
+var w=y[4].split(",");
+document.write("Rollno:"+w[0]);
+document.write("Marks:"+w[1]);
+document.write("attendence:"+w[2]);
+document.write("name:"+w[3]);}
+}
+</script>
